@@ -5,7 +5,7 @@
 // @grant       GM_getValue
 // @grant       GM_xmlhttpRequest
 // @version     1.0
-// @author      -
+// @author      spoderx555
 // @description 9/21/2025, 8:29:35 PM
 // ==/UserScript==
 
@@ -48,7 +48,7 @@ function handler(e) {
   const rect = range.getBoundingClientRect();
 
   const tooltip = document.createElement("button");
-  tooltip.innerText = "Send";
+  tooltip.innerText = "Send to Webhook";
   tooltip.id = "extension-tooltip";
   tooltip.style = `position: absolute;top: ${parseInt(window.scrollY+rect.bottom)}px;left: ${
     parseInt(window.scrollX+rect.right + 5)
