@@ -10,7 +10,7 @@
 // ==/UserScript==
 
 const webhooks = GM_getValue("webhooks", []);
-const username = GM_getValue("username");
+const username = GM_getValue("username", "test-bot");
 
 document.addEventListener("selectionchange", debounce(handler, 500));
 
@@ -77,3 +77,4 @@ function debounce(func, duration) {
         timeout = setTimeout(effect, duration);
       };
     }
+
