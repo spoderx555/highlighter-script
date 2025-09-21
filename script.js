@@ -6,7 +6,7 @@
 // @grant       GM_xmlhttpRequest
 // @version     1.0
 // @author      spoderx555
-// @description 9/21/2025, 8:29:35 PM
+// @description 
 // ==/UserScript==
 
 const webhooks = GM_getValue("webhooks", []);
@@ -77,4 +77,5 @@ function debounce(func, duration) {
         timeout = setTimeout(effect, duration);
       };
     }
+
 
